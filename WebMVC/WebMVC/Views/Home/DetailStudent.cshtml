@@ -1,0 +1,52 @@
+﻿@model WebMVC.Models.StudentModel
+
+@{
+    ViewData["Title"] = " Student Profile";
+}
+<h4>Student Profile</h4>
+<h1>@Model.fullname</h1>
+
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.mssv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.mssv)
+        </dd>
+
+        <dt class="col-sm-2">
+          Họ và Tên
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.fullname)
+        </dd>
+        <dt class="col-sm-2">
+          Tên lớp
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.classname)
+        </dd>
+        <dt class="col-sm-2">
+            Giới tính
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.sex)
+        </dd>
+        <dt class="col-sm-2">
+            GPA
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.gpa)
+        </dd>
+        
+    </dl>
+</div>
+<div>
+    <a> 
+        @Html.ActionLink("Edit ", "GetEditStudent", "Home", new { id = Model.mssv })
+    </a>|
+    <a asp-action="Index">Back to List</a>
+</div>
