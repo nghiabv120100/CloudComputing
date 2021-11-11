@@ -16,19 +16,16 @@
     <h4>Student</h4>
     <hr />
     <h1 class="text-center" style="margin:40px">Student Information</h1>
-        <form asp-controller="Student" asp-action="EditStudent" method="post">
+        <form asp-controller="Student" asp-action="UpdateStudent" method="post">
             <div class="form-group">
-                <label asp-for="@Model.id">StudentID</label>
-                <input asp-for="@Model.id" type="text" readonly class="form-control">
+                <label asp-for="@Model.mssv">StudentID</label>
+                <input asp-for="@Model.mssv" type="text" readonly class="form-control">
             </div>
             <div class="form-group">
                 <label asp-for="@Model.fullname">Full Name</label>
                 <input asp-for="@Model.fullname" type="text" class="form-control">
             </div>
-            <div class="form-group">
-                <label asp-for="@Model.birth">Birthday</label>
-                <input asp-for="@Model.birth" type="date" class="form-control">
-            </div>
+          
             <div class="form-group">
                 <label asp-for="@Model.classname">Class</label>
                 <input asp-for="@Model.classname" type="text" class="form-control">

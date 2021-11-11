@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ngokl\\Source\\Repos\\nghiabv120100\\CloudComputing\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {}
+    "E:\\InformationTechnology\\Nam_4Ky_1\\DienToanDamMay\\CloudComputing\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ngokl\\Source\\Repos\\nghiabv120100\\CloudComputing\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {
+    "E:\\InformationTechnology\\Nam_4Ky_1\\DienToanDamMay\\CloudComputing\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ngokl\\Source\\Repos\\nghiabv120100\\CloudComputing\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
+        "projectUniqueName": "E:\\InformationTechnology\\Nam_4Ky_1\\DienToanDamMay\\CloudComputing\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
         "projectName": "StudentManagement",
-        "projectPath": "C:\\Users\\ngokl\\Source\\Repos\\nghiabv120100\\CloudComputing\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
-        "packagesPath": "C:\\Users\\ngokl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ngokl\\Source\\Repos\\nghiabv120100\\CloudComputing\\StudentManagement\\StudentManagement\\obj\\",
+        "projectPath": "E:\\InformationTechnology\\Nam_4Ky_1\\DienToanDamMay\\CloudComputing\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
+        "packagesPath": "C:\\Users\\Nghia\\.nuget\\packages\\",
+        "outputPath": "E:\\InformationTechnology\\Nam_4Ky_1\\DienToanDamMay\\CloudComputing\\StudentManagement\\StudentManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ngokl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nghia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +43,10 @@
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[3.1.20, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.11.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

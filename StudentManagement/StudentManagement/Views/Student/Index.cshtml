@@ -21,7 +21,6 @@
             <tr>
                 <th scope="col">Student ID</th>
                 <th scope="col">Full Name</th>
-                <th scope="col">Birthday</th>
                 <th scope="col">Class</th>
                 <th scope="col">Gender</th>
                 <th scope="col">GPA</th>
@@ -29,22 +28,17 @@
                 <th></th>
             </tr>
         </thead>
-        @*<tbody>
+        <tbody>
                     @foreach (var sv in Model)
                     {
                         <tr>
                             <td>
-                                @Html.DisplayFor(modelItem => sv.id)
+                                @Html.DisplayFor(modelItem => sv.mssv)
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => sv.fullname)
                             </td>
-                            <td>
-                                @if (sv.birth.HasValue)
-                                {
-                                    @sv.birth.Value.ToString("mm/dd/yyyy")
-                                }
-                            </td>
+     
                             <td>
                                 @Html.DisplayFor(modelItem => sv.classname)
                             </td>
@@ -55,12 +49,12 @@
                                 @Html.DisplayFor(modelItem => sv.gpa)
                             </td>
                             <td>
-                                <a asp-controller="Student" asp-action="EditStudent" asp-route-id="@sv.id" class="btn btn-danger">Edit</a>
-                                <a asp-controller="Student" asp-action="DeleteStudent" asp-route-id="@sv.id" class="btn btn-danger">Delete</a>
+                                <a asp-controller="Student" asp-action="EditStudent" asp-route-id="@sv.mssv" class="btn btn-danger">Edit</a>
+                                <a asp-controller="Student" asp-action="DeleteStudent" asp-route-id="@sv.mssv" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                     }
-                </tbody>*@
+                </tbody>
     </table>
 </body>
 </html>

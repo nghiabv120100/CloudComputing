@@ -7,7 +7,7 @@ namespace StudentManagement.Models
 {
     public class Student
     {
-        public int id { get; set; }
+        public int mssv { get; set; }
 
         public string fullname { get; set; }
 
@@ -17,7 +17,7 @@ namespace StudentManagement.Models
 
         public double gpa { get; set; }
 
-        public DateTime birth { get; set; }
+        
 
         public Student()
         { }
