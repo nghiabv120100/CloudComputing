@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ngokl\\source\\repos\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {}
+    "C:\\Users\\ngokl\\Source\\Repos\\nghiabv120100\\CloudComputing\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ngokl\\source\\repos\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {
+    "C:\\Users\\ngokl\\Source\\Repos\\nghiabv120100\\CloudComputing\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ngokl\\source\\repos\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
+        "projectUniqueName": "C:\\Users\\ngokl\\Source\\Repos\\nghiabv120100\\CloudComputing\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
         "projectName": "StudentManagement",
-        "projectPath": "C:\\Users\\ngokl\\source\\repos\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
+        "projectPath": "C:\\Users\\ngokl\\Source\\Repos\\nghiabv120100\\CloudComputing\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
         "packagesPath": "C:\\Users\\ngokl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ngokl\\source\\repos\\StudentManagement\\StudentManagement\\obj\\",
+        "outputPath": "C:\\Users\\ngokl\\Source\\Repos\\nghiabv120100\\CloudComputing\\StudentManagement\\StudentManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ngokl\\AppData\\Roaming\\NuGet\\NuGet.Config",

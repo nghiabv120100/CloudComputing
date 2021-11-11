@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wJXQS1GOEDr1+Wv7aCaZJtr6v2IdNUlzfhedbhRzmfnOS3R1oqS8arE6RI4ZO2kH9lHvneXVF+Lfpgy/qjOMQQ==",
+  "dgSpecHash": "sL2MlqhK//BRBPGpPGCWSiBLdxe66CG+mLiScEg9bYg/xfcgmDShYBmXnd09EBklO/JzmfXXZ3liNGlm+EBAlg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ngokl\\source\\repos\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
+  "projectFilePath": "C:\\Users\\ngokl\\Source\\Repos\\nghiabv120100\\CloudComputing\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ngokl\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\ngokl\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.20\\microsoft.aspnetcore.mvc.razor.extensions.3.1.20.nupkg.sha512",
