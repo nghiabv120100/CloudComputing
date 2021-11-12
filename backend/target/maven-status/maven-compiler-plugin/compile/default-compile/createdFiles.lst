@@ -1,0 +1,5 @@
+com\cloudcomputing\backend\model\StudentDTO.class
+com\cloudcomputing\backend\repository\StudentRepository.class
+com\cloudcomputing\backend\api\StudentAPI.class
+com\cloudcomputing\backend\service\StudentService.class
+com\cloudcomputing\backend\BackendApplication.class
