@@ -32,13 +32,22 @@ public class StudentService {
         if (!student.getClassname().isEmpty() && student.getClassname() != oldStudent.getClassname()) {
             oldStudent.setClassname(student.getClassname());
         }
-        if (!student.getSex().isEmpty() && student.getSex() != oldStudent.getSex()) {
-            oldStudent.setSex(student.getSex());
-        }
+//        if (!student.getSex().isEmpty() && student.getSex() != oldStudent.getSex()) {
+//            oldStudent.setSex(student.getSex());
+//        }
         if (student.getGpa() != oldStudent.getGpa()) {
             oldStudent.setGpa(student.getGpa());
         }
         StudentDTO newStudent = studentRepository.save(oldStudent);
         return newStudent;
+    }
+    public int deleteStudent(int mssv) {
+        try {
+            StudentDTO studentDTO = getStudentById(mssv);
+            studentRepository.delete(studentDTO);
+            return 1;
+        } catch (Exception e) {
+            return 0;
+        }
     }
 }

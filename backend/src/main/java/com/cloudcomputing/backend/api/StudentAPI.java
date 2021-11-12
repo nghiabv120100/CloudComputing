@@ -35,4 +35,8 @@ public class StudentAPI {
         StudentDTO newStudent = studentService.updateStudent(student);
         return newStudent;
     }
+    @DeleteMapping("delete/{mssv}")
+    public int deleteStudent(@PathVariable Integer mssv) {
+        return studentService.deleteStudent(mssv);
+    }
 }
