@@ -39,32 +39,33 @@ namespace StudentManagement.Controllers
         {
             this.orderBy = orderBy;
             var request = new HttpRequestMessage(HttpMethod.Get,
-                "http://localhost:8080/student/getAll");
+                "http://backend:8080/student/getAll");
 
             var client = _clientFactory.CreateClient();
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
 
-            var response = await client.SendAsync(request);
 
-            if (response.IsSuccessStatusCode)
+            students = new List<Student>();
+            try
             {
-                var responseStream = await response.Content.ReadAsStreamAsync();
-                students = await System.Text.Json.JsonSerializer.DeserializeAsync<IEnumerable<Student>>(responseStream);
-                /*                if (this.orderBy == 1)
-                                {
-                                    students = students.OrderByDescending(st => (st.listenning + st.writing, st.reading, st.speaking));
-                                }
-                                else if (this.orderBy == 2)
-                                {
-                                    students = students.OrderByDescending(st => (st.year, st.listenning + st.writing, st.reading, st.speaking));
-                                }*/
+                var response = await client.SendAsync(request);
 
-            }
-            else
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseStream = await response.Content.ReadAsStreamAsync();
+                    students = await System.Text.Json.JsonSerializer.DeserializeAsync<IEnumerable<Student>>(responseStream);
+
+                }
+                else
+                {
+                    students = new List<Student>();
+
+                }
+            } 
+            catch (Exception e)
             {
-                students = new List<Student>();
-
+                Console.WriteLine(e.Message);
             }
 
             return View(students);
@@ -73,10 +74,8 @@ namespace StudentManagement.Controllers
         [HttpPost, ActionName("AddNewStudent")]
         public async Task<ActionResult> AddNewStudent(Student st)
         {
-            //var request = new HttpRequestMessage(HttpMethod.Post,
-            // "http://springboot:8080/student/"+st.id);
 
-            var request = "http://localhost:8080/student/add";
+            var request = "http://backend:8080/student/add";
 
             var client = _clientFactory.CreateClient();
             client.DefaultRequestHeaders.Accept.Add(
@@ -117,7 +116,7 @@ namespace StudentManagement.Controllers
         public async Task<ActionResult> EditStudent(int id)
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-             "http://localhost:8080/student/getById/" + id);
+             "http://backend:8080/student/getById/" + id);
 
             var client = _clientFactory.CreateClient();
             client.DefaultRequestHeaders.Accept.Add(
@@ -141,7 +140,7 @@ namespace StudentManagement.Controllers
 
         public async Task<ActionResult> UpdateStudent(Student st)
         {
-            var request ="http://localhost:8080/student/update";
+            var request ="http://backend:8080/student/update";
 
             var client = _clientFactory.CreateClient();
             client.DefaultRequestHeaders.Accept.Add(
@@ -174,7 +173,7 @@ namespace StudentManagement.Controllers
         public async Task<IActionResult> DeleteStudent(int id)
         {
             var request = new HttpRequestMessage(HttpMethod.Delete,
-             "http://localhost:8080/student/delete/" + id);
+             "http://backend:8080/student/delete/" + id);
 
             var client = _clientFactory.CreateClient();
             client.DefaultRequestHeaders.Accept.Add(

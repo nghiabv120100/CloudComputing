@@ -33,6 +33,17 @@ services:
       - DATABASE_PORT=3306
     depends_on:
       - db
+  webui:
+      image: 'webui:latest'
+      container_name: webui
+      build: 
+        context: ./StudentManagement
+      ports:
+        - 5000:80
+      depends_on:
+        - backend
+      networks:
+        - netclould
 
 networks: 
   netclould: 
