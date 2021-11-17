@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Nghia\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Nghia\\.nuget\\packages"
+      "C:\\Users\\ngokl\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ngokl\\.nuget\\packages"
     ]
   }
 }

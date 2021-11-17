@@ -50,7 +50,7 @@
                             </td>
                             <td>
                                 <a asp-controller="Student" asp-action="EditStudent" asp-route-id="@sv.mssv" class="btn btn-danger">Edit</a>
-                                <a asp-controller="Student" asp-action="DeleteStudent" asp-route-id="@sv.mssv" class="btn btn-danger">Delete</a>
+                                <a asp-controller="Student" asp-action="DeleteStudent" asp-route-id="@sv.mssv"  class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this item?')";>Delete</a>
                             </td>
                         </tr>
                     }
